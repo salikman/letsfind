@@ -1,0 +1,91 @@
+.lang {
+    position: relative;
+    padding-left: rem(30);
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: rem(-4);
+        left: 0;
+        width: rem(24);
+        height: rem(24);
+        background: url('../img/jam_world.png') no-repeat center / cover;
+    }
+
+    .lang-current {
+        position: relative;
+        padding-right: rem(22);
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-45%);
+            width: rem(14);
+            height: rem(14);
+            background: url('../img/arrow.png') no-repeat center / contain;
+        }
+    }
+}
+
+.exchange {
+    position: relative;
+    padding-left: rem(30);
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: rem(-4);
+        left: 0;
+        width: rem(24);
+        height: rem(24);
+        background: url('../img/currency-exchange.png') no-repeat center / cover;
+    }
+
+    .exchange-current {
+        position: relative;
+        padding-right: rem(22);
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-45%);
+            width: rem(14);
+            height: rem(14);
+            background: url('../img/arrow.png') no-repeat center / contain;
+        }
+    }
+}
+
+.location {
+    position: relative;
+    padding-right: rem(22);
+
+    .location-current {
+        display: flex;
+        align-items: center;
+        gap: rem(5);
+
+        img {
+            width: rem(24);
+            height: rem(24);
+            object-fit: cover;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-45%);
+        width: rem(14);
+        height: rem(14);
+        background: url('../img/arrow.png') no-repeat center / contain;
+    }
+}

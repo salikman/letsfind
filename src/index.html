@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/base/header.html', {})
+
+        <main class="page">
+            <div data-observ></div>
+            @@include('html/sections/heading.html')
+            
+            <div class="page__container">
+                @@include('html/elements/search-tabs.html')
+                @@include('html/sections/services.html')
+                @@include('html/sections/works.html')
+            </div>
+        </main>
+    
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

@@ -1,0 +1,54 @@
+.heading {
+    padding: rem(60) 0;
+    background: url('../img/bg-intro.png') no-repeat center / cover;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(50);
+    }
+
+    &__title {
+        font-size: rem(50);
+        font-weight: 500;
+        
+        span {font-weight: 600;}
+    }
+
+    &__search {
+        max-width: rem(730);
+        width: 100%;
+    }
+
+    &__services {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: rem(15);
+
+        .services__item {
+            display: flex;
+            flex-direction: column;
+            gap: rem(5);
+            width: 100%;
+            padding: rem(15) rem(10);
+            background: white;
+            border-radius: rem(8);
+
+            img {
+                width: rem(32);
+                height: rem(32);
+                object-fit: contain;
+            }
+
+            h4 {
+                font-size: rem(24);
+                font-weight: 500;
+            }
+
+            span {
+                font-size: rem(13);
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.search-tabs {
+    padding: rem(60) 0;
+
+    &__title {
+        margin-bottom: rem(30);
+        font-size: rem(28);
+    }
+
+    &__city {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(20);
+
+        .city__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: rem(12) rem(20);
+            background: rgba($firstAccentColor, .1);
+            border-radius: rem(4);
+            
+            span {color: $firstAccentColor;}
+
+            &.active {
+                background: $firstAccentColor;
+
+                span {color: white;}
+            }
+
+            &.all {
+                padding-left: 0;
+                padding-right: 0;
+                background: transparent;
+                text-decoration: underline;
+                text-decoration-style: dashed;
+                text-decoration-color: $firstAccentColor;
+            }
+        }
+    }
+}

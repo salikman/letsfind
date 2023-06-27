@@ -1,0 +1,115 @@
+.footer {
+    padding: rem(30) 0;
+    background: white;
+    border-top: rem(1) solid #DADADA;
+
+    &__wrapper {
+        display: flex;
+        gap: rem(80);
+    }
+
+    &__box {
+        width: rem(200);
+    }
+    
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .name {
+           font-size: rem(30);
+           font-weight: 600; 
+        }
+
+        .description {
+            font-size: rem(12);
+            font-weight: 500;
+        }
+    }
+
+    &__copyright {
+        margin-bottom: rem(30);
+        color: #a7a7a7;
+        font-size: rem(13);
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: rem(15);
+        margin-bottom: rem(30);
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: rem(40);
+            height: rem(40);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__interactive {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(20);
+    }
+
+    &__add {
+        position: relative;
+        padding-left: rem(20);
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: rem(16);
+            height: rem(16);
+            background: url('../img/icons/icons.svg#add-blue') no-repeat center / contain;
+        }
+        span {
+
+            color: $blueColor;
+        }
+    }
+    &__menu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: space-between;
+        gap: rem(40);
+
+        .menu-box {
+            display: flex;
+            flex-direction: column;
+            gap: rem(15);
+
+            & > a {
+                &:hover {text-decoration: underline;}
+
+                span {color: $blueColor;}
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: rem(10);
+
+                li {
+                    a {
+                        font-size: rem(13);
+
+                        &:hover {text-decoration: underline;}
+                    }
+                }
+            }
+        }
+    }
+}

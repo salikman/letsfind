@@ -1,0 +1,35 @@
+.search-section {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+
+    &__input {
+        display: block;
+        width: 100%;
+
+        input.input {
+            width: 100%;
+            padding: rem(12) rem(20);
+            background: white;
+            border-radius: rem(4) 0px 0px rem(4);
+
+            &::placeholder {color: #8B8F8F;}
+        }
+    }
+
+    &__button {
+        display: block;
+        width: 100%;
+
+        button.button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: rem(12) rem(20);
+            background: $blueColor;
+            color: white;
+            border-radius: 0px rem(4) rem(4) 0px;
+        }
+    }
+}
