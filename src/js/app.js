@@ -29,6 +29,48 @@ const swiperWorks = new Swiper(".works-slider", {
     el: ".swiper-pagination",
   },
 });
+const swiperHouse = new Swiper(".house-slider", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+const swiperShopping = new Swiper(".shopping-slider", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+const swiperAnnounc = new Swiper(".announc-slider", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+const swiperPeople = new Swiper(".people-slider", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+const swiperSale = new Swiper(".sale-slider", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+const swiperBlog = new Swiper(".blog-slider", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 /* ********************************************************************** */
 /* ******************************Materialize***************************** */
 const elTabs = document.querySelectorAll('.tabs')

@@ -52,13 +52,6 @@
                 gap: rem(2);
 
                 &:hover {text-decoration: underline;}
-
-                svg {
-                    width: 24px;
-                    height: 24px;
-                    color: $blackColor;
-                    object-fit: contain;
-                }
             }
         }
 

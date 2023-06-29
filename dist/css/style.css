@@ -489,14 +489,6 @@ body.lock {
   text-decoration: underline;
 }
 
-.header__menu .menu__link svg {
-  width: 24px;
-  height: 24px;
-  color: #323535;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .header__menu .has-dropdown .menu__link {
   position: relative;
   padding-right: 1.375rem;
@@ -827,6 +819,72 @@ body.lock {
   text-decoration-color: #599C15;
 }
 
+.location-tabs {
+  padding: 3.75rem 0;
+}
+
+.location-tabs__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1.875rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1.875rem;
+  font-size: 1.75rem;
+}
+
+.location-tabs__title span {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.location-tabs__city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.location-tabs__city .city__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(89, 156, 21, 0.1);
+  border-radius: 0.25rem;
+}
+
+.location-tabs__city .city__item svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.location-tabs__city .city__item span {
+  color: #599C15;
+}
+
+.location-tabs__city .city__item.all {
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #599C15;
+}
+
 .no-webp .heading{
   background: url("../img/bg-intro.png") no-repeat center/cover; }
 
@@ -901,11 +959,23 @@ body.lock {
   font-size: 0.8125rem;
 }
 
-.services-section {
+.services-section,
+.house-section,
+.shopping-section,
+.announc-section,
+.people-section,
+.sale-section,
+.blog-section {
   padding: 3.75rem 0;
 }
 
-.services-section__heading {
+.services-section__heading,
+.house-section__heading,
+.shopping-section__heading,
+.announc-section__heading,
+.people-section__heading,
+.sale-section__heading,
+.blog-section__heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -915,22 +985,46 @@ body.lock {
   margin-bottom: 1.875rem;
 }
 
-.services-section__title {
+.services-section__title,
+.house-section__title,
+.shopping-section__title,
+.announc-section__title,
+.people-section__title,
+.sale-section__title,
+.blog-section__title {
   margin-right: 1.875rem;
   font-size: 1.75rem;
 }
 
-.services-section__city {
+.services-section__city,
+.house-section__city,
+.shopping-section__city,
+.announc-section__city,
+.people-section__city,
+.sale-section__city,
+.blog-section__city {
   margin-bottom: 0.25rem;
   color: #599C15;
   font-size: 0.8125rem;
 }
 
-.services-section__city:hover {
+.services-section__city:hover,
+.house-section__city:hover,
+.shopping-section__city:hover,
+.announc-section__city:hover,
+.people-section__city:hover,
+.sale-section__city:hover,
+.blog-section__city:hover {
   text-decoration: underline;
 }
 
-.services-section__add {
+.services-section__add,
+.house-section__add,
+.shopping-section__add,
+.announc-section__add,
+.people-section__add,
+.sale-section__add,
+.blog-section__add {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -951,30 +1045,90 @@ body.lock {
 }
 
 .services-section__add span,
-.services-section__add i {
+.services-section__add i,
+.house-section__add span,
+.house-section__add i,
+.shopping-section__add span,
+.shopping-section__add i,
+.announc-section__add span,
+.announc-section__add i,
+.people-section__add span,
+.people-section__add i,
+.sale-section__add span,
+.sale-section__add i,
+.blog-section__add span,
+.blog-section__add i {
   -webkit-transition: all 280ms ease-in-out 0ms;
   -o-transition: all 280ms ease-in-out 0ms;
   transition: all 280ms ease-in-out 0ms;
 }
 
 .services-section__add:hover,
-.services-section__add:focus {
+.services-section__add:focus,
+.house-section__add:hover,
+.house-section__add:focus,
+.shopping-section__add:hover,
+.shopping-section__add:focus,
+.announc-section__add:hover,
+.announc-section__add:focus,
+.people-section__add:hover,
+.people-section__add:focus,
+.sale-section__add:hover,
+.sale-section__add:focus,
+.blog-section__add:hover,
+.blog-section__add:focus {
   background: #1E5D9B;
 }
 
 .services-section__add:hover span,
 .services-section__add:hover i,
 .services-section__add:focus span,
-.services-section__add:focus i {
+.services-section__add:focus i,
+.house-section__add:hover span,
+.house-section__add:hover i,
+.house-section__add:focus span,
+.house-section__add:focus i,
+.shopping-section__add:hover span,
+.shopping-section__add:hover i,
+.shopping-section__add:focus span,
+.shopping-section__add:focus i,
+.announc-section__add:hover span,
+.announc-section__add:hover i,
+.announc-section__add:focus span,
+.announc-section__add:focus i,
+.people-section__add:hover span,
+.people-section__add:hover i,
+.people-section__add:focus span,
+.people-section__add:focus i,
+.sale-section__add:hover span,
+.sale-section__add:hover i,
+.sale-section__add:focus span,
+.sale-section__add:focus i,
+.blog-section__add:hover span,
+.blog-section__add:hover i,
+.blog-section__add:focus span,
+.blog-section__add:focus i {
   color: white;
 }
 
-.services-section__tabs {
+.services-section__tabs,
+.house-section__tabs,
+.shopping-section__tabs,
+.announc-section__tabs,
+.people-section__tabs,
+.sale-section__tabs,
+.blog-section__tabs {
   position: relative;
   margin-bottom: 1.875rem;
 }
 
-.services-section__tabs:after {
+.services-section__tabs:after,
+.house-section__tabs:after,
+.shopping-section__tabs:after,
+.announc-section__tabs:after,
+.people-section__tabs:after,
+.sale-section__tabs:after,
+.blog-section__tabs:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -984,16 +1138,34 @@ body.lock {
   background: #DADADA;
 }
 
-.services-section__tabs .tabs {
+.services-section__tabs .tabs,
+.house-section__tabs .tabs,
+.shopping-section__tabs .tabs,
+.announc-section__tabs .tabs,
+.people-section__tabs .tabs,
+.sale-section__tabs .tabs,
+.blog-section__tabs .tabs {
   height: auto;
 }
 
-.services-section__tabs .tabs .tab {
+.services-section__tabs .tabs .tab,
+.house-section__tabs .tabs .tab,
+.shopping-section__tabs .tabs .tab,
+.announc-section__tabs .tabs .tab,
+.people-section__tabs .tabs .tab,
+.sale-section__tabs .tabs .tab,
+.blog-section__tabs .tabs .tab {
   height: auto;
   line-height: 1.2;
 }
 
-.services-section__tabs .tabs .tab a {
+.services-section__tabs .tabs .tab a,
+.house-section__tabs .tabs .tab a,
+.shopping-section__tabs .tabs .tab a,
+.announc-section__tabs .tabs .tab a,
+.people-section__tabs .tabs .tab a,
+.sale-section__tabs .tabs .tab a,
+.blog-section__tabs .tabs .tab a {
   padding: 0.625rem;
   color: #323535;
   font-size: 0.9375rem;
@@ -1001,32 +1173,74 @@ body.lock {
 }
 
 .services-section__tabs .tabs .tab a:focus,
-.services-section__tabs .tabs .tab a:active {
+.services-section__tabs .tabs .tab a:active,
+.house-section__tabs .tabs .tab a:focus,
+.house-section__tabs .tabs .tab a:active,
+.shopping-section__tabs .tabs .tab a:focus,
+.shopping-section__tabs .tabs .tab a:active,
+.announc-section__tabs .tabs .tab a:focus,
+.announc-section__tabs .tabs .tab a:active,
+.people-section__tabs .tabs .tab a:focus,
+.people-section__tabs .tabs .tab a:active,
+.sale-section__tabs .tabs .tab a:focus,
+.sale-section__tabs .tabs .tab a:active,
+.blog-section__tabs .tabs .tab a:focus,
+.blog-section__tabs .tabs .tab a:active {
   background: white;
 }
 
-.services-section__tabs .tabs .indicator {
+.services-section__tabs .tabs .indicator,
+.house-section__tabs .tabs .indicator,
+.shopping-section__tabs .tabs .indicator,
+.announc-section__tabs .tabs .indicator,
+.people-section__tabs .tabs .indicator,
+.sale-section__tabs .tabs .indicator,
+.blog-section__tabs .tabs .indicator {
   z-index: 1;
   background-color: #599C15;
 }
 
-.services-section__sliders .swiper-wrapper {
+.services-section__sliders .swiper-wrapper,
+.house-section__sliders .swiper-wrapper,
+.shopping-section__sliders .swiper-wrapper,
+.announc-section__sliders .swiper-wrapper,
+.people-section__sliders .swiper-wrapper,
+.sale-section__sliders .swiper-wrapper,
+.blog-section__sliders .swiper-wrapper {
   margin-bottom: 2.375rem;
 }
 
-.services-section__sliders .swiper-pagination-bullet {
+.services-section__sliders .swiper-pagination-bullet,
+.house-section__sliders .swiper-pagination-bullet,
+.shopping-section__sliders .swiper-pagination-bullet,
+.announc-section__sliders .swiper-pagination-bullet,
+.people-section__sliders .swiper-pagination-bullet,
+.sale-section__sliders .swiper-pagination-bullet,
+.blog-section__sliders .swiper-pagination-bullet {
   width: 0.5rem;
   height: 0.5rem;
   background: rgba(89, 156, 21, 0.4);
   opacity: 1;
 }
 
-.services-section__sliders .swiper-pagination-bullet-active {
+.services-section__sliders .swiper-pagination-bullet-active,
+.house-section__sliders .swiper-pagination-bullet-active,
+.shopping-section__sliders .swiper-pagination-bullet-active,
+.announc-section__sliders .swiper-pagination-bullet-active,
+.people-section__sliders .swiper-pagination-bullet-active,
+.sale-section__sliders .swiper-pagination-bullet-active,
+.blog-section__sliders .swiper-pagination-bullet-active {
   color: #fff;
   background: #599C15;
 }
 
-.services-section__item {
+.services-section__item,
+.house-section__item,
+.shopping-section__item,
+.announc-section__item,
+.people-section__item,
+.sale-section__item,
+.blog-section__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1041,7 +1255,13 @@ body.lock {
   overflow: hidden;
 }
 
-.services-section__item .item__heading {
+.services-section__item .item__heading,
+.house-section__item .item__heading,
+.shopping-section__item .item__heading,
+.announc-section__item .item__heading,
+.people-section__item .item__heading,
+.sale-section__item .item__heading,
+.blog-section__item .item__heading {
   position: absolute;
   top: 0;
   left: 0;
@@ -1056,7 +1276,13 @@ body.lock {
   padding: 0.5rem;
 }
 
-.services-section__item .item__status {
+.services-section__item .item__status,
+.house-section__item .item__status,
+.shopping-section__item .item__status,
+.announc-section__item .item__status,
+.people-section__item .item__status,
+.sale-section__item .item__status,
+.blog-section__item .item__status {
   position: relative;
   padding: 0.25rem 0.625rem;
   padding-right: 2rem;
@@ -1069,7 +1295,13 @@ body.lock {
   text-transform: capitalize;
 }
 
-.services-section__item .item__status:after {
+.services-section__item .item__status:after,
+.house-section__item .item__status:after,
+.shopping-section__item .item__status:after,
+.announc-section__item .item__status:after,
+.people-section__item .item__status:after,
+.sale-section__item .item__status:after,
+.blog-section__item .item__status:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1082,21 +1314,45 @@ body.lock {
   background: url("../img/icons/icons.svg#icon-vip");
 }
 
-.services-section__item .item__like {
+.services-section__item .item__like,
+.house-section__item .item__like,
+.shopping-section__item .item__like,
+.announc-section__item .item__like,
+.people-section__item .item__like,
+.sale-section__item .item__like,
+.blog-section__item .item__like {
   margin-left: auto;
 }
 
-.services-section__item .item__like svg {
+.services-section__item .item__like svg,
+.house-section__item .item__like svg,
+.shopping-section__item .item__like svg,
+.announc-section__item .item__like svg,
+.people-section__item .item__like svg,
+.sale-section__item .item__like svg,
+.blog-section__item .item__like svg {
   width: 2rem;
   height: 2rem;
 }
 
-.services-section__item .item__img {
+.services-section__item .item__img,
+.house-section__item .item__img,
+.shopping-section__item .item__img,
+.announc-section__item .item__img,
+.people-section__item .item__img,
+.sale-section__item .item__img,
+.blog-section__item .item__img {
   position: relative;
   padding-bottom: 56%;
 }
 
-.services-section__item .item__img img {
+.services-section__item .item__img img,
+.house-section__item .item__img img,
+.shopping-section__item .item__img img,
+.announc-section__item .item__img img,
+.people-section__item .item__img img,
+.sale-section__item .item__img img,
+.blog-section__item .item__img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1106,7 +1362,13 @@ body.lock {
      object-fit: cover;
 }
 
-.services-section__item .item__info {
+.services-section__item .item__info,
+.house-section__item .item__info,
+.shopping-section__item .item__info,
+.announc-section__item .item__info,
+.people-section__item .item__info,
+.sale-section__item .item__info,
+.blog-section__item .item__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1118,17 +1380,35 @@ body.lock {
   padding: 1rem 0.5rem;
 }
 
-.services-section__item .item__category {
+.services-section__item .item__category,
+.house-section__item .item__category,
+.shopping-section__item .item__category,
+.announc-section__item .item__category,
+.people-section__item .item__category,
+.sale-section__item .item__category,
+.blog-section__item .item__category {
   color: #599C15;
   font-size: 0.8125rem;
 }
 
-.services-section__item .item__title:hover span {
+.services-section__item .item__title:hover span,
+.house-section__item .item__title:hover span,
+.shopping-section__item .item__title:hover span,
+.announc-section__item .item__title:hover span,
+.people-section__item .item__title:hover span,
+.sale-section__item .item__title:hover span,
+.blog-section__item .item__title:hover span {
   color: #599C15;
   text-decoration: underline;
 }
 
-.services-section__item .item__title span {
+.services-section__item .item__title span,
+.house-section__item .item__title span,
+.shopping-section__item .item__title span,
+.announc-section__item .item__title span,
+.people-section__item .item__title span,
+.sale-section__item .item__title span,
+.blog-section__item .item__title span {
   display: block;
   width: 100%;
   height: 1.75rem;
@@ -1139,7 +1419,25 @@ body.lock {
   overflow: hidden;
 }
 
-.services-section__item .item__meta {
+.services-section__item .item__wage,
+.house-section__item .item__wage,
+.shopping-section__item .item__wage,
+.announc-section__item .item__wage,
+.people-section__item .item__wage,
+.sale-section__item .item__wage,
+.blog-section__item .item__wage {
+  color: #599C15;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.services-section__item .item__meta,
+.house-section__item .item__meta,
+.shopping-section__item .item__meta,
+.announc-section__item .item__meta,
+.people-section__item .item__meta,
+.sale-section__item .item__meta,
+.blog-section__item .item__meta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1150,14 +1448,38 @@ body.lock {
 }
 
 .services-section__item .item__location,
-.services-section__item .item__date {
+.services-section__item .item__date,
+.house-section__item .item__location,
+.house-section__item .item__date,
+.shopping-section__item .item__location,
+.shopping-section__item .item__date,
+.announc-section__item .item__location,
+.announc-section__item .item__date,
+.people-section__item .item__location,
+.people-section__item .item__date,
+.sale-section__item .item__location,
+.sale-section__item .item__date,
+.blog-section__item .item__location,
+.blog-section__item .item__date {
   position: relative;
   padding-left: 1.125rem;
   font-size: 0.8125rem;
 }
 
 .services-section__item .item__location:before,
-.services-section__item .item__date:before {
+.services-section__item .item__date:before,
+.house-section__item .item__location:before,
+.house-section__item .item__date:before,
+.shopping-section__item .item__location:before,
+.shopping-section__item .item__date:before,
+.announc-section__item .item__location:before,
+.announc-section__item .item__date:before,
+.people-section__item .item__location:before,
+.people-section__item .item__date:before,
+.sale-section__item .item__location:before,
+.sale-section__item .item__date:before,
+.blog-section__item .item__location:before,
+.blog-section__item .item__date:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1169,15 +1491,33 @@ body.lock {
   height: 1rem;
 }
 
-.services-section__item .item__location:before {
+.services-section__item .item__location:before,
+.house-section__item .item__location:before,
+.shopping-section__item .item__location:before,
+.announc-section__item .item__location:before,
+.people-section__item .item__location:before,
+.sale-section__item .item__location:before,
+.blog-section__item .item__location:before {
   background: url("../img/icons/icons.svg#icon-marker") no-repeat center/cover;
 }
 
-.services-section__item .item__date:before {
+.services-section__item .item__date:before,
+.house-section__item .item__date:before,
+.shopping-section__item .item__date:before,
+.announc-section__item .item__date:before,
+.people-section__item .item__date:before,
+.sale-section__item .item__date:before,
+.blog-section__item .item__date:before {
   background: url("../img/icons/icons.svg#icon-time") no-repeat center/cover;
 }
 
-.services-section__item .item__reviews {
+.services-section__item .item__reviews,
+.house-section__item .item__reviews,
+.shopping-section__item .item__reviews,
+.announc-section__item .item__reviews,
+.people-section__item .item__reviews,
+.sale-section__item .item__reviews,
+.blog-section__item .item__reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1187,7 +1527,13 @@ body.lock {
   gap: 0.5rem;
 }
 
-.services-section__item .item__star {
+.services-section__item .item__star,
+.house-section__item .item__star,
+.shopping-section__item .item__star,
+.announc-section__item .item__star,
+.people-section__item .item__star,
+.sale-section__item .item__star,
+.blog-section__item .item__star {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1197,29 +1543,59 @@ body.lock {
   gap: 0.5rem;
 }
 
-.services-section__item .item__star .stars {
+.services-section__item .item__star .stars,
+.house-section__item .item__star .stars,
+.shopping-section__item .item__star .stars,
+.announc-section__item .item__star .stars,
+.people-section__item .item__star .stars,
+.sale-section__item .item__star .stars,
+.blog-section__item .item__star .stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0.1875rem;
 }
 
-.services-section__item .item__star .stars svg {
+.services-section__item .item__star .stars svg,
+.house-section__item .item__star .stars svg,
+.shopping-section__item .item__star .stars svg,
+.announc-section__item .item__star .stars svg,
+.people-section__item .item__star .stars svg,
+.sale-section__item .item__star .stars svg,
+.blog-section__item .item__star .stars svg {
   width: 0.9375rem;
   height: 0.9375rem;
 }
 
-.services-section__item .item__star .num {
+.services-section__item .item__star .num,
+.house-section__item .item__star .num,
+.shopping-section__item .item__star .num,
+.announc-section__item .item__star .num,
+.people-section__item .item__star .num,
+.sale-section__item .item__star .num,
+.blog-section__item .item__star .num {
   color: #599C15;
   font-size: 0.8125rem;
 }
 
-.services-section__item .item__count {
+.services-section__item .item__count,
+.house-section__item .item__count,
+.shopping-section__item .item__count,
+.announc-section__item .item__count,
+.people-section__item .item__count,
+.sale-section__item .item__count,
+.blog-section__item .item__count {
   color: #5C6363;
   font-size: 0.8125rem;
 }
 
-.services-section__all {
+.services-section__all,
+.house-section__all,
+.shopping-section__all,
+.announc-section__all,
+.people-section__all,
+.sale-section__all,
+.blog-section__all {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1241,7 +1617,13 @@ body.lock {
   text-transform: none;
 }
 
-.services-section__all span {
+.services-section__all span,
+.house-section__all span,
+.shopping-section__all span,
+.announc-section__all span,
+.people-section__all span,
+.sale-section__all span,
+.blog-section__all span {
   color: white;
   -webkit-transition: all 280ms ease-in-out 0ms;
   -o-transition: all 280ms ease-in-out 0ms;
@@ -1249,13 +1631,37 @@ body.lock {
 }
 
 .services-section__all:hover,
-.services-section__all:focus {
+.services-section__all:focus,
+.house-section__all:hover,
+.house-section__all:focus,
+.shopping-section__all:hover,
+.shopping-section__all:focus,
+.announc-section__all:hover,
+.announc-section__all:focus,
+.people-section__all:hover,
+.people-section__all:focus,
+.sale-section__all:hover,
+.sale-section__all:focus,
+.blog-section__all:hover,
+.blog-section__all:focus {
   background: white;
   border-color: #1E5D9B;
 }
 
 .services-section__all:hover span,
-.services-section__all:focus span {
+.services-section__all:focus span,
+.house-section__all:hover span,
+.house-section__all:focus span,
+.shopping-section__all:hover span,
+.shopping-section__all:focus span,
+.announc-section__all:hover span,
+.announc-section__all:focus span,
+.people-section__all:hover span,
+.people-section__all:focus span,
+.sale-section__all:hover span,
+.sale-section__all:focus span,
+.blog-section__all:hover span,
+.blog-section__all:focus span {
   color: #323535;
 }
 

@@ -1,4 +1,5 @@
-.services-section {
+.services-section, .house-section, .shopping-section,
+.announc-section, .people-section, .sale-section, .blog-section {
     padding: rem(60) 0;
 
     &__heading {
@@ -192,6 +193,12 @@
                 font-size: 24px;
                 overflow: hidden;
             }
+        }
+
+        .item__wage {
+            color: $firstAccentColor;
+            font-size: rem(20);
+            font-weight: 600;
         }
 
         .item__meta {
