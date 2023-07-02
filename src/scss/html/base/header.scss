@@ -2,29 +2,33 @@
     box-shadow: 0 0 1px rgba(#000, .2);
 
     &__wrapper {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: rem(40);
         padding: rem(15) 0;
+
+        @media (max-width: 1440px) {
+            gap: rem(20);
+        }
     }
 
     &__logo {
-        display: flex;
-        flex-direction: column;
-
-        .name {
-           font-size: rem(30);
-           font-weight: 600; 
-        }
-
-        .description {
-            font-size: rem(12);
-            font-weight: 500;
+        @media (max-width: 1260px) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
         }
     }
 
     &__location {
+        @media (max-width: 1260px) {
+            margin-left: auto;
+        }
+
         .location-current {
             display: flex;
             align-items: center;
@@ -41,10 +45,16 @@
     }
 
     &__menu {
+        @media (max-width: 1260px) {display: none;}
+
         .menu {
             display: flex;
             align-items: center;
             gap: rem(30);
+
+            @media (max-width: 1440px) {
+                gap: rem(20);
+            }
 
             &__link {
                 display: flex;
@@ -75,11 +85,11 @@
     }
 
     &__lang {
-
+        @media (max-width: 1260px) {display: none;}
     }
 
     &__exchange {
-        
+        @media (max-width: 1260px) {display: none;}
     }
 
     &__button {
@@ -105,6 +115,56 @@
 
         span {
             color: white;
+        }
+
+        @media (max-width: 1260px) {
+            width: rem(30);
+            height: rem(30);
+            padding: rem(0);
+            background: transparent;
+
+            &:after {
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background: url('../img/icon-add-black.png') no-repeat center / cover;
+            }
+
+            span {display: none;}
+        }
+    }
+
+    &__collapse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(30);
+        height: rem(30);
+
+        @media (min-width: 1261px) {display: none;}
+
+        span {
+            position: relative;
+            width: rem(24);
+            height: rem(2);
+            background: black;
+            border-radius: rem(10);
+
+            &:before,&:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: rem(2);
+                background: black;
+                border-radius: rem(10);
+            }
+
+            &:before {
+                top: rem(-7);
+            }
+            &:after {
+                bottom: rem(-8);
+            }
         }
     }
 }

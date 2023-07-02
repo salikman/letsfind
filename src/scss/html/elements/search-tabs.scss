@@ -4,6 +4,10 @@
     &__title {
         margin-bottom: rem(30);
         font-size: rem(28);
+
+        @media (max-width: 991px) {
+            font-size: rem(22);
+        }
     }
 
     &__city {
@@ -20,6 +24,10 @@
             border-radius: rem(4);
             
             span {color: $firstAccentColor;}
+
+            @media (max-width: 991px) {
+                padding: rem(8) rem(16);
+            }
 
             &.active {
                 background: $firstAccentColor;

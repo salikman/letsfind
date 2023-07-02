@@ -1,3 +1,19 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+
+
+    .name {
+        font-size: rem(30);
+        font-weight: 600; 
+    }
+
+    .description {
+        font-size: rem(12);
+        font-weight: 500;
+    }
+}
+
 .lang {
     position: relative;
     padding-left: rem(30);

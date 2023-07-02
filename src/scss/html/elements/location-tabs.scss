@@ -1,6 +1,10 @@
 .location-tabs {
     padding: rem(60) 0;
 
+    @media (max-width: 991px) {
+        padding: rem(30) 0;
+    }
+
     &__title {
         display: flex;
         align-items: flex-end;
@@ -12,6 +16,13 @@
         span {
             margin-bottom: rem(8);
             font-size: rem(12);
+        }
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+            font-size: rem(22);
         }
     }
 
@@ -35,6 +46,15 @@
             }
             
             span {color: $firstAccentColor;}
+
+            @media (max-width: 991px) {
+                padding: rem(8) rem(16);
+
+                svg {
+                    width: rem(24);
+                    height: rem(24);
+                }
+            }
 
             &.all {
                 padding-left: 0;

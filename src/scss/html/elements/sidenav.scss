@@ -1,0 +1,64 @@
+.sidenav {
+    padding: rem(15) 0;
+
+    .btn-close {
+        position: absolute;
+        top: rem(30);
+        left: 0;
+        line-height: 1;
+
+        a {
+            display: flex;
+            align-items: center;
+            height: auto;
+            line-height: 1;
+        }
+    }
+
+    .logo-box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(30);
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .menu__link {
+        display: flex;
+        align-items: center;
+        gap: rem(5);
+    }
+
+    .btn-add {
+        margin-bottom: rem(20);
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: rem(8);
+
+            span {
+                color: $blueColor;
+                font-size: rem(15);
+                font-weight: 500;
+            }
+        }
+    }
+
+    .drop-box {
+        display: flex;
+        gap: rem(20);
+        margin-bottom: rem(20);
+        padding: 0 rem(32);
+        line-height: inherit;
+    }
+
+    .location-box {
+        width: max-content;
+        padding: 0 rem(32);
+
+        .location-current {
+            width: max-content;
+        }
+    }
+}

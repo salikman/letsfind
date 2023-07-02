@@ -2,15 +2,31 @@
 .announc-section, .people-section, .sale-section, .blog-section {
     padding: rem(60) 0;
 
+    @media (max-width: 991px) {
+        padding: rem(30) 0;
+    }
+
     &__heading {
+        position: relative;
         display: flex;
         align-items: flex-end;
         margin-bottom: rem(30);
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+            padding-right: rem(50);
+        }
     }
 
     &__title {
         margin-right: rem(30);
         font-size: rem(28);
+
+        @media (max-width: 991px) {
+            width: 100%;
+            margin-bottom: rem(5);
+            font-size: rem(22);
+        }
     }
 
     &__city {
@@ -19,6 +35,10 @@
         font-size: rem(13);
 
         &:hover {text-decoration: underline;}
+
+        @media (max-width: 991px) {
+            margin-bottom: 0;
+        }
     }
 
     &__add {
@@ -40,6 +60,16 @@
             background: $blueColor;
 
             span, i {color: white;}
+        }
+
+        @media (max-width: 991px) {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            padding: rem(8) rem(10);
+
+            span {display: none;}
         }
     }
 
