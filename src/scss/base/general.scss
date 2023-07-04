@@ -95,4 +95,8 @@ body {
     &_start {
         padding-top: rem($headerHeight);
     }
+
+    &_post {
+        padding-top: rem(50);
+    }
 }

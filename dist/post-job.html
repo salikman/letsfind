@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230704111348"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&_v=20230704111348" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css?_v=20230704111348">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230704111348">
+    <title>Разместить вакансию на LetsFind</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+        <div class="header__wrapper">
+            <div class="header__collapse sidenav-trigger" data-target="slide-out"><span></span></div>
+            <a href="/" class="header__logo logo">
+                <span class="name">Letsfind</span>
+                <span class="description">Бизнес наших</span>
+            </a>
+            <div class="header__location">
+                <div class="location-current"><picture><source srcset="img/flag-portugal.webp" type="image/webp"><img src="img/flag-portugal.png" alt="portugal"></picture></div>
+            </div>
+            <div class="header__menu">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-1.webp" type="image/webp"><img src="img/icon-1.png" width="24" height="24" alt=""></picture><span>Услуги</span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-2.webp" type="image/webp"><img src="img/icon-2.png" width="24" height="24" alt=""></picture><span>Работа</span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-3.webp" type="image/webp"><img src="img/icon-3.png" width="24" height="24" alt=""></picture><span>Жилье</span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-4.webp" type="image/webp"><img src="img/icon-4.png" width="24" height="24" alt=""></picture><span>Товары</span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-5.webp" type="image/webp"><img src="img/icon-5.png" width="24" height="24" alt=""></picture><span>Знакомства</span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-6.webp" type="image/webp"><img src="img/icon-6.png" width="24" height="24" alt=""></picture><span>Акции</span></a></li>
+                    <li class="menu__item has-dropdown">
+                        <a href="#" class="menu__link"><span>Больше</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__lang lang">
+                <div class="lang-current">Ru</div>
+            </div>
+            <div class="header__exchange exchange">
+                <div class="exchange-current">EUR</div>
+            </div>
+            <a href="#modalAdd" class="header__button waves-effect modal-trigger"><span>Подать объявление</span></a>
+        </div>
+    </div>
+</header>
+        <ul id="slide-out" class="sidenav">
+    <li class="btn-close"><a class="sidenav-close" href="#!"><picture><source srcset="img/close.webp" type="image/webp"><img src="img/close.png" alt=""></picture></a></li>
+    <li>
+        <div class="logo-box">
+            <a href="/" class="logo">
+                <span class="name">Letsfind</span>
+                <span class="description">Бизнес наших</span>
+            </a>
+        </div>
+    </li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-2.webp" type="image/webp"><img src="img/icon-2.png" width="24" height="24" alt=""></picture><span>Работа</span></a></li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-3.webp" type="image/webp"><img src="img/icon-3.png" width="24" height="24" alt=""></picture><span>Жилье</span></a></li>
+    <li><a class="subheader">Услуги</a></li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-4.webp" type="image/webp"><img src="img/icon-4.png" width="24" height="24" alt=""></picture><span>Товары</span></a></li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-5.webp" type="image/webp"><img src="img/icon-5.png" width="24" height="24" alt=""></picture><span>Знакомства</span></a></li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-6.webp" type="image/webp"><img src="img/icon-6.png" width="24" height="24" alt=""></picture><span>Акции</span></a></li>
+    <li class="btn-add"><a href="#modalAdd" class="modal-trigger"><picture><source srcset="img/icon-add-blue.webp" type="image/webp"><img src="img/icon-add-blue.png" alt=""></picture><span>Подать объявление</span></a></li>
+    <li class="drop-box">
+        <div class="lang">
+            <div class="lang-current">Ru</div>
+        </div>
+        <div class="exchange">
+            <div class="exchange-current">EUR</div>
+        </div>
+    </li>
+    <li class="location-box">
+        <div class="location">
+            <div class="location-current">
+                <picture><source srcset="img/flag-portugal.webp" type="image/webp"><img src="img/flag-portugal.png" alt=""></picture>
+                <span>Португалия</span>
+            </div>
+        </div>
+    </li>
+</ul>
+
+        <main class="page page_post">
+            <div data-observ></div>
+            <div class="page__container">
+                <div class="post">
+    <div class="post__wrapper">
+        <h1 class="post__title">Разместить вакансию на LetsFind</h1>
+        <div class="post__tabs">
+            <a href="#" class="post__tab active">Вакансия</a>
+            <a href="#" class="post__tab">Резюме</a>
+        </div>
+        <form action="" class="post-form">
+            <label class="post__box">
+                <span class="title">Категория <b>*</b></span>
+                <select name="" id="">
+                    <option value="0" disabled>Продавцы и Кассиры</option>
+                    <option value="1">Test 1</option>
+                    <option value="2">Test 2</option>
+                    <option value="3">Test 3</option>
+                </select>
+            </label>
+            <label class="post__box">
+                <span class="title">Заготовок <b>*</b></span>
+                <input type="text" name="" id="">
+            </label>
+            <label class="post__box">
+                <span class="title">Локация <b>*</b></span>
+                <select name="" id="">
+                    <option value="0" disabled>Лисабон, Португалия</option>
+                    <option value="1">Test 1</option>
+                    <option value="2">Test 2</option>
+                    <option value="3">Test 3</option>
+                </select>
+            </label>
+            <label class="post__box">
+                <span class="title">Описание <b>*</b></span>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </label>
+            <label class="post__box">
+                <span class="title">Имя <b>*</b></span>
+                <input type="text" name="" id="">
+            </label>
+            <label class="post__box">
+                <span class="title">Ел-почта <b>*</b></span>
+                <input type="text" name="" id="">
+            </label>
+            <label class="post__box">
+                <span class="title">Телефон <b>*</b></span>
+                <input type="text" name="" id="">
+            </label>
+            <div class="post__add">
+                <span>Указать допольнительные данные</span>
+                <i class="material-icons">add</i>
+            </div>
+            <div class="post__rate">
+                <span class="title">Выберите план публикации</span>
+                <div class="rate-box">
+                    <div class="rate__item">
+                        <div class="rate__box">
+                            <h4 class="rate__title">
+                                Standart
+                                <span class="silver-color">Free</span>
+                            </h4>
+                            <ul class="rate__list">
+                                <li><i class="material-icons green-color">check</i> Срок публикации 1 день</li>
+                                <li class="silver-color"><i class="material-icons silver-color">close</i> Off To See</li>
+                                <li class="silver-color"><i class="material-icons silver-color">close</i> Off To See</li>
+                                <li class="silver-color"><i class="material-icons silver-color">close</i> Off To See</li>
+                                <li class="silver-color"><i class="material-icons silver-color">close</i> Off To See</li>
+                            </ul>
+                            <label for="r1">
+                                <input type="radio" name="rate" id="r1">
+                                <p class="rate__button waves-effect">
+                                    <span>Выбрано</span>
+                                    <i class="material-icons green-color">check</i>
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="rate__item">
+                        <div class="rate__box">
+                            <h4 class="rate__title star">
+                                Top
+                                <span class="green-color">$ 99.99</span>
+                            </h4>
+                            <ul class="rate__list">
+                                <li><i class="material-icons green-color">check</i> Срок публикации 1 месяц</li>
+                                <li><i class="material-icons green-color">check</i> Отметка TOP</li>
+                                <li><i class="material-icons green-color">check</i> How Hypnosis </li>
+                                <li class="silver-color"><i class="material-icons silver-color">close</i> Off To See </li>
+                                <li class="silver-color"><i class="material-icons silver-color">close</i> Off To See </li>
+                            </ul>
+                            <label for="r2">
+                                <input type="radio" name="rate" id="r2">
+                                <p class="rate__button waves-effect">
+                                    <span>Выбрано</span>
+                                    <i class="material-icons green-color">check</i>
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="rate__item">
+                        <div class="rate__box">
+                            <h4 class="rate__title">
+                                Vip
+                                <span class="green-color">$ 199.99</span>
+                            </h4>
+                            <ul class="rate__list">
+                                <li><i class="material-icons green-color">check</i> Срок публикации 1 месяц</li>
+                                <li><i class="material-icons green-color">check</i> Отметка TOP</li>
+                                <li><i class="material-icons green-color">check</i> Ваше объявление выше TOP</li>
+                                <li><i class="material-icons green-color">check</i> Отметка VIP</li>
+                                <li><i class="material-icons green-color">check</i> На странице выбранного города</li>
+                            </ul>
+                            <label for="r3">
+                                <input type="radio" name="rate" id="r3">
+                                <p class="rate__button waves-effect">
+                                    <span>Выбрано</span>
+                                    <i class="material-icons green-color">check</i>
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post__price">
+                <p>Сума</p>
+                <span>$ 0.00</span>
+            </div>
+            <div class="post__submit">
+                <button class="waves-effect" type="submit"><span>Отправить</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrapper">
+            <div class="footer__box">
+                <a href="/" class="footer__logo">
+                    <span class="name">Letsfind</span>
+                    <span class="description">Бизнес наших</span>
+                </a>
+                <div class="footer__copyright">©2023, LetsFind.ua</div>
+                <ul class="footer__social">
+                    <li><a href="#"><picture><source srcset="img/telegram.webp" type="image/webp"><img src="img/telegram.png" alt="telegram"></picture></a></li>
+                    <li><a href="#"><picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt="whatsapp"></picture></a></li>
+                    <li><a href="#"><picture><source srcset="img/viber.webp" type="image/webp"><img src="img/viber.png" alt="viber"></picture></a></li>
+                    <li><a href="#"><picture><source srcset="img/google.webp" type="image/webp"><img src="img/google.png" alt="google"></picture></a></li>
+                </ul>
+                <div class="footer__interactive">
+                    <div class="footer__location location">
+                        <div class="location-current">
+                            <picture><source srcset="img/flag-portugal.webp" type="image/webp"><img src="img/flag-portugal.png" alt=""></picture>
+                            <span>Португалия</span>
+                        </div>
+                    </div>
+                    <a href="#" class="footer__add"><span>Подать объявление</span></a>
+                    <div class="footer__lang lang">
+                        <div class="lang-current">Ru</div>
+                    </div>
+                    <div class="footer__exchange exchange">
+                        <div class="exchange-current">EUR</div>
+                    </div>  
+                </div>
+            </div>
+            <div class="footer__menu">
+                <div class="menu-box">
+                    <a href="#"><span>Услуги</span></a>
+                    <ul>
+                        <li><a href="#">Краса і догляд</a></li>
+                        <li><a href="#">Здоров'я і лікарі</a></li>
+                        <li><a href="#">Спорт і тренування</a></li>
+                        <li><a href="#">Автомобілі</a></li>
+                        <li><a href="#">Їжа і розваги</a></li>
+                        <li><a href="#">Туризм і відпочинок</a></li>
+                        <li><a href="#">Фото відео</a></li>
+                        <li><a href="#">Навчання</a></li>
+                        <li><a href="#">Для дітей і мам</a></li>
+                        <li><a href="#">Шопінг</a></li>
+                        <li><a href="#">Тварини</a></li>
+                        <li><a href="#">Бізнес</a></li>
+                    </ul>
+                </div>
+                <div class="menu-box">
+                    <a href="#"><span>О нас</span></a>
+                    <ul>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Договор оферта</a></li>
+                        <li><a href="#">Политика использования cookies</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">О проекте</a></li>
+                    </ul>
+                    <br />
+                    <a href="#"><span>Покупателям</span></a>
+                    <ul>
+                        <li><a href="#">Платные услуги</a></li>
+                        <li><a href="#">Размещение баннеров</a></li>
+                    </ul>
+                </div>
+                <div class="menu-box">
+                    <a href="#"><span>Робота</span></a>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Резюме</a></li>
+                    </ul>
+                    <br>
+                    <a href="#"><span>Анонсы</span></a>
+                    <ul>
+                        <li><a href="#">Все анонсы</a></li>
+                        <li><a href="#">Выставки</a></li>
+                        <li><a href="#">Презентации</a></li>
+                        <li><a href="#">Бизнес встречи</a></li>
+                        <li><a href="#">Воркшопы</a></li>
+                        <li><a href="#">Концерты</a></li>
+                    </ul>
+                </div>
+                <div class="menu-box">
+                    <a href="#"><span>Товары</span></a>
+                    <ul>
+                        <li><a href="#">Все товары</a></li>
+                        <li><a href="#">Ручная работа</a></li>
+                        <li><a href="#">Отдам бесплатно</a></li>
+                        <li><a href="#">Нуждаемся</a></li>
+                    </ul>
+                    <br>
+                    <a href="#"><span>Жилье</span></a>
+                    <ul>
+                        <li><a href="#">Продам</a></li>
+                        <li><a href="#">Сдам</a></li>
+                        <li><a href="#">Сниму</a></li>
+                        <li><a href="#">Риелторы</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-box">
+                    <a href="#"><span>Знакомства</span></a>
+                    <ul>
+                        <li><a href="#">Коллективные встречи</a></li>
+                        <li><a href="#">Давайте дружить</a></li>
+                        <li><a href="#">Ищу пару для отношений</a></li>
+                    </ul>
+                    <br>
+                    <a href="#"><span>Акции</span></a>
+                    <ul>
+                        <li><a href="#">Все акции</a></li>
+                    </ul>
+                    <br>
+                    <a href="#"><span>Блог</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+        <div id="modalAdd" class="modal w940">
+    <div class="modal-content modal-add">
+        <a href="#!" class="modal-close waves-effect close"><i class="material-icons">close</i></a>
+        <h4 class="title">Подать объявление</h4>
+        <ul class="list-ad">
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-2.webp" type="image/webp"><img src="img/icon-white-2.png" alt="Image"></picture><span>Работа</span></a></li>
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-3.webp" type="image/webp"><img src="img/icon-white-3.png" alt="Image"></picture><span>Жилье</span></a></li>
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-4.webp" type="image/webp"><img src="img/icon-white-4.png" alt="Image"></picture><span>Товары</span></a></li>
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-5.webp" type="image/webp"><img src="img/icon-white-5.png" alt="Image"></picture><span>Знакомства</span></a></li>
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-1.webp" type="image/webp"><img src="img/icon-white-1.png" alt="Image"></picture><span>Услуги</span></a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js?_v=20230704111348"></script>
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230704111348"></script>
+<script src="js/app.min.js?_v=20230704111348"></script>
+</body>
+</html>

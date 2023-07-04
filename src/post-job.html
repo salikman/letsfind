@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Разместить вакансию на LetsFind"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/base/header.html', {})
+        @@include('html/elements/sidenav.html')
+
+        <main class="page page_post">
+            <div data-observ></div>
+            <div class="page__container">
+                @@include('html/pages/post-job.html')
+            </div>
+        </main>
+    
+        @@include('html/base/footer.html', {})
+        
+        @@include('html/elements/modal.html')
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

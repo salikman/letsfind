@@ -105,3 +105,53 @@
         background: url('../img/arrow.png') no-repeat center / contain;
     }
 }
+
+.list-ad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: rem(15);
+
+    li {
+        width: calc(100% / 3 - rem(15));
+
+        @media (max-width: 767px) {
+            width: calc(100% / 2 - rem(15));
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: rem(5);
+            padding: rem(30) rem(15);
+            background: $firstAccentColor;
+            border-radius: rem(8);
+
+            img {
+                width: rem(30);
+                height: rem(30);
+                object-fit: cover;
+            }
+
+            span {
+                color: white;
+                font-size: rem(24);
+                font-weight: 500; 
+            }
+
+            @media (max-width: 767px) {
+                padding: rem(20) rem(10);
+
+                img {
+                    width: rem(20);
+                    height: rem(20);
+                }
+
+                span {font-size: rem(20);}
+            }
+        }
+    }
+}

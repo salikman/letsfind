@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230702145223"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&_v=20230702145223" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css?_v=20230702145223">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230702145223">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230704111348"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&_v=20230704111348" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css?_v=20230704111348">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230704111348">
     <title>Главная</title>
 </head>
 
@@ -44,10 +44,44 @@
             <div class="header__exchange exchange">
                 <div class="exchange-current">EUR</div>
             </div>
-            <a href="#" class="header__button"><span>Подать объявление</span></a>
+            <a href="#modalAdd" class="header__button waves-effect modal-trigger"><span>Подать объявление</span></a>
         </div>
     </div>
 </header>
+        <ul id="slide-out" class="sidenav">
+    <li class="btn-close"><a class="sidenav-close" href="#!"><picture><source srcset="img/close.webp" type="image/webp"><img src="img/close.png" alt=""></picture></a></li>
+    <li>
+        <div class="logo-box">
+            <a href="/" class="logo">
+                <span class="name">Letsfind</span>
+                <span class="description">Бизнес наших</span>
+            </a>
+        </div>
+    </li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-2.webp" type="image/webp"><img src="img/icon-2.png" width="24" height="24" alt=""></picture><span>Работа</span></a></li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-3.webp" type="image/webp"><img src="img/icon-3.png" width="24" height="24" alt=""></picture><span>Жилье</span></a></li>
+    <li><a class="subheader">Услуги</a></li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-4.webp" type="image/webp"><img src="img/icon-4.png" width="24" height="24" alt=""></picture><span>Товары</span></a></li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-5.webp" type="image/webp"><img src="img/icon-5.png" width="24" height="24" alt=""></picture><span>Знакомства</span></a></li>
+    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-6.webp" type="image/webp"><img src="img/icon-6.png" width="24" height="24" alt=""></picture><span>Акции</span></a></li>
+    <li class="btn-add"><a href="#modalAdd" class="modal-trigger"><picture><source srcset="img/icon-add-blue.webp" type="image/webp"><img src="img/icon-add-blue.png" alt=""></picture><span>Подать объявление</span></a></li>
+    <li class="drop-box">
+        <div class="lang">
+            <div class="lang-current">Ru</div>
+        </div>
+        <div class="exchange">
+            <div class="exchange-current">EUR</div>
+        </div>
+    </li>
+    <li class="location-box">
+        <div class="location">
+            <div class="location-current">
+                <picture><source srcset="img/flag-portugal.webp" type="image/webp"><img src="img/flag-portugal.png" alt=""></picture>
+                <span>Португалия</span>
+            </div>
+        </div>
+    </li>
+</ul>
 
         <main class="page">
             <div data-observ></div>
@@ -101,40 +135,6 @@
         </div>
     </div>
 </div>
-            <ul id="slide-out" class="sidenav">
-    <li class="btn-close"><a class="sidenav-close" href="#!"><picture><source srcset="img/close.webp" type="image/webp"><img src="img/close.png" alt=""></picture></a></li>
-    <li>
-        <div class="logo-box">
-            <a href="/" class="logo">
-                <span class="name">Letsfind</span>
-                <span class="description">Бизнес наших</span>
-            </a>
-        </div>
-    </li>
-    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-2.webp" type="image/webp"><img src="img/icon-2.png" width="24" height="24" alt=""></picture><span>Работа</span></a></li>
-    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-3.webp" type="image/webp"><img src="img/icon-3.png" width="24" height="24" alt=""></picture><span>Жилье</span></a></li>
-    <li><a class="subheader">Услуги</a></li>
-    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-4.webp" type="image/webp"><img src="img/icon-4.png" width="24" height="24" alt=""></picture><span>Товары</span></a></li>
-    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-5.webp" type="image/webp"><img src="img/icon-5.png" width="24" height="24" alt=""></picture><span>Знакомства</span></a></li>
-    <li class="menu__item"><a href="#" class="menu__link"><picture><source srcset="img/icon-6.webp" type="image/webp"><img src="img/icon-6.png" width="24" height="24" alt=""></picture><span>Акции</span></a></li>
-    <li class="btn-add"><a href="#"><picture><source srcset="img/icon-add-blue.webp" type="image/webp"><img src="img/icon-add-blue.png" alt=""></picture><span>Подать объявление</span></a></li>
-    <li class="drop-box">
-        <div class="lang">
-            <div class="lang-current">Ru</div>
-        </div>
-        <div class="exchange">
-            <div class="exchange-current">EUR</div>
-        </div>
-    </li>
-    <li class="location-box">
-        <div class="location">
-            <div class="location-current">
-                <picture><source srcset="img/flag-portugal.webp" type="image/webp"><img src="img/flag-portugal.png" alt=""></picture>
-                <span>Португалия</span>
-            </div>
-        </div>
-    </li>
-</ul>
             
             <div class="page__container">
                 <div class="search-tabs">
@@ -172,7 +172,7 @@
 
     <div class="services-section__sliders">
         <div id="test1">
-            <div class="swiper services-slider">
+            <div class="swiper services-slider section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="services-section__item">
@@ -423,7 +423,7 @@
             </div>
         </div>
         <div id="test2">
-            <div class="swiper services-slider">
+            <div class="swiper services-slider section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="services-section__item">
@@ -674,7 +674,7 @@
             </div>
         </div>
         <div id="test3">
-            <div class="swiper services-slider">
+            <div class="swiper services-slider section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="services-section__item">
@@ -925,7 +925,7 @@
             </div>
         </div>
         <div id="test4">
-            <div class="swiper services-slider">
+            <div class="swiper services-slider section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="services-section__item">
@@ -1198,7 +1198,7 @@
 
     <div class="works-section__sliders">
         <div id="work1">
-            <div class="swiper works-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="works-section__item">
@@ -1307,7 +1307,7 @@
             </div>
         </div>
         <div id="work2">
-            <div class="swiper works-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="works-section__item">
@@ -1451,7 +1451,7 @@
             </div>
         </div>
         <div id="work3">
-            <div class="swiper works-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="works-section__item">
@@ -1560,7 +1560,7 @@
             </div>
         </div>
         <div id="work4">
-            <div class="swiper works-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="works-section__item">
@@ -1725,7 +1725,7 @@
 
     <div class="house-section__sliders">
         <div id="house1">
-            <div class="swiper house-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="house-section__item">
@@ -1984,7 +1984,7 @@
             </div>
         </div>
         <div id="house2">
-            <div class="swiper house-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="house-section__item">
@@ -2243,7 +2243,7 @@
             </div>
         </div>
         <div id="house3">
-            <div class="swiper house-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="house-section__item">
@@ -2502,7 +2502,7 @@
             </div>
         </div>
         <div id="house4">
-            <div class="swiper house-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="house-section__item">
@@ -2635,7 +2635,7 @@
             </div>
         </div>
         <div id="house5">
-            <div class="swiper house-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="house-section__item">
@@ -2915,7 +2915,7 @@
 
     <div class="shopping-section__sliders">
         <div id="shopping1">
-            <div class="swiper shopping-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="shopping-section__item">
@@ -3163,7 +3163,7 @@
             </div>
         </div>
         <div id="shopping2">
-            <div class="swiper shopping-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="shopping-section__item">
@@ -3410,7 +3410,7 @@
             </div>
         </div>
         <div id="shopping3">
-            <div class="swiper shopping-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="shopping-section__item">
@@ -3657,7 +3657,7 @@
             </div>
         </div>
         <div id="shopping4">
-            <div class="swiper shopping-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="shopping-section__item">
@@ -3927,7 +3927,7 @@
 
     <div class="announc-section__sliders">
         <div id="announc1">
-            <div class="swiper announc-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="announc-section__item">
@@ -4204,7 +4204,7 @@
             </div>
         </div>
         <div id="announc2">
-            <div class="swiper announc-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="announc-section__item">
@@ -4481,7 +4481,7 @@
             </div>
         </div>
         <div id="announc3">
-            <div class="swiper announc-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="announc-section__item">
@@ -4758,7 +4758,7 @@
             </div>
         </div>
         <div id="announc4">
-            <div class="swiper announc-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="announc-section__item">
@@ -5035,7 +5035,7 @@
             </div>
         </div>
         <div id="announc5">
-            <div class="swiper announc-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="announc-section__item">
@@ -5312,7 +5312,7 @@
             </div>
         </div>
         <div id="announc6">
-            <div class="swiper announc-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="announc-section__item">
@@ -5610,7 +5610,7 @@
 
     <div class="people-section__sliders">
         <div id="people1">
-            <div class="swiper people-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="people-section__item">
@@ -5755,7 +5755,7 @@
             </div>
         </div>
         <div id="people2">
-            <div class="swiper people-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="people-section__item">
@@ -5900,7 +5900,7 @@
             </div>
         </div>
         <div id="people3">
-            <div class="swiper people-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="people-section__item">
@@ -6045,7 +6045,7 @@
             </div>
         </div>
         <div id="people4">
-            <div class="swiper people-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="people-section__item">
@@ -6202,7 +6202,7 @@
 
     <div class="sale-section__sliders">
         <div id="sale1">
-            <div class="swiper sale-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="sale-section__item">
@@ -6367,7 +6367,7 @@
 
     <div class="blog-section__sliders">
         <div id="blog">
-            <div class="swiper blog-slider">
+            <div class="swiper section-js">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="blog-section__item">
@@ -6595,12 +6595,25 @@
         </div>
     </div>
 </footer>
+        <div id="modalAdd" class="modal w940">
+    <div class="modal-content modal-add">
+        <a href="#!" class="modal-close waves-effect close"><i class="material-icons">close</i></a>
+        <h4 class="title">Подать объявление</h4>
+        <ul class="list-ad">
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-2.webp" type="image/webp"><img src="img/icon-white-2.png" alt="Image"></picture><span>Работа</span></a></li>
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-3.webp" type="image/webp"><img src="img/icon-white-3.png" alt="Image"></picture><span>Жилье</span></a></li>
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-4.webp" type="image/webp"><img src="img/icon-white-4.png" alt="Image"></picture><span>Товары</span></a></li>
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-5.webp" type="image/webp"><img src="img/icon-white-5.png" alt="Image"></picture><span>Знакомства</span></a></li>
+            <li><a class="waves-effect" href="#"><picture><source srcset="img/icon-white-1.webp" type="image/webp"><img src="img/icon-white-1.png" alt="Image"></picture><span>Услуги</span></a></li>
+        </ul>
+    </div>
+</div>
     </div>
 
     <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js?_v=20230702145223"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js?_v=20230704111348"></script>
 <!-- swiper -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230702145223"></script>
-<script src="js/app.min.js?_v=20230702145223"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230704111348"></script>
+<script src="js/app.min.js?_v=20230704111348"></script>
 </body>
 </html>
