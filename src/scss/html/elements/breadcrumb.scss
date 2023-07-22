@@ -1,0 +1,35 @@
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: rem(30) 0;
+
+    @include media(991) {
+        padding: rem(15) 0;
+    }
+
+    li {
+        position: relative;
+        display: inline;
+        font-size: rem(13);
+
+        & + li {
+            padding-left: rem(20);
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: rem(18);
+                height: rem(18);
+                background: url('../img/icons/icons.svg#arrow') no-repeat center / cover;
+            }
+        }
+
+        a {
+            display: flex;
+        }
+    }
+}

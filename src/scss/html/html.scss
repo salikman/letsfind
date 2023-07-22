@@ -6,9 +6,14 @@
 @import './elements/location-tabs';
 @import './elements/sidenav';
 @import './elements/modal';
+@import './elements/breadcrumb';
+@import './elements/filter';
+@import './elements/see-also';
 
 @import './pages/post';
+@import './pages/services';
 
 @import './sections/heading';
 @import './sections/services';
 @import './sections//works';
+@import './sections/search';

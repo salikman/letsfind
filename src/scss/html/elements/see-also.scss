@@ -1,0 +1,48 @@
+.also-tabs {
+    padding: 0 0 rem(60);
+
+    &__title {
+        margin-bottom: rem(30);
+        font-size: rem(28);
+
+        @media (max-width: 991px) {
+            font-size: rem(22);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(20);
+
+        .also__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: rem(12) rem(20);
+            background: rgba($firstAccentColor, .1);
+            border-radius: rem(4);
+            
+            span {color: $firstAccentColor;}
+
+            @media (max-width: 991px) {
+                padding: rem(8) rem(16);
+            }
+
+            &.active {
+                background: $firstAccentColor;
+
+                span {color: white;}
+            }
+
+            &.all {
+                padding-left: 0;
+                padding-right: 0;
+                background: transparent;
+                text-decoration: underline;
+                text-decoration-style: dashed;
+                text-decoration-color: $firstAccentColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Красота и уход в Португалии"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/base/header.html', {})
+        @@include('html/elements/sidenav.html')
+
+        @@include('html/sections/search.html')
+        <main class="page">
+            <div data-observ></div>
+            <div class="page__container">
+                @@include('html/elements/breadcrumb.html')
+                <div class="page_row">
+                    @@include('html/elements/filter.html')
+                    @@include('html/pages/services-open.html')
+                </div>
+            </div>
+        </main>
+    
+        @@include('html/base/footer.html', {})
+        
+        @@include('html/elements/modal.html')
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

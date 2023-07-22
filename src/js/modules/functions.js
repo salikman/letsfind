@@ -14,26 +14,4 @@ export function isWebp() {
         let className = support === true ? 'webp' : 'no-webp';
         document.documentElement.classList.add(className);
     })
-
-    var addButton = document.querySelector('.post__add');
-
-    var newLabel = document.createElement('label');
-    newLabel.className = 'post__box';
-
-    var newSpan = document.createElement('span');
-    newSpan.className = 'title';
-    newSpan.textContent = 'Доп. поле ';
-
-    var newInput = document.createElement('input');
-    newInput.type = 'text';
-    newInput.name = '';
-    newInput.id = '';
-
-    newLabel.appendChild(newSpan);
-    newLabel.appendChild(newInput);
-
-    addButton.addEventListener('click', function () {
-        addButton.parentNode.insertBefore(newLabel.cloneNode(true), addButton.nextSibling);
-    });
-
 }

@@ -253,6 +253,113 @@
                 }
             }
         }
+
+        .container-file {
+            max-width: 100%;
+            width: 100%;
+            padding: rem(12) rem(20);
+            border-radius: rem(4);
+            border: rem(1) solid #C1C1C1;
+
+            svg {
+                width: rem(24);
+                height: rem(24);
+                color: $firstAccentColor;
+    
+                path {
+                    fill: $firstAccentColor;
+                }
+            }
+    
+            [hidden] {
+                display: none !important;
+                visibility: hidden !important;
+            }
+        }
+
+        .file-input {
+            display: flex;
+
+            &__label {
+                margin-left: rem(-4);
+                padding: 0 rem(4);
+                font-size: rem(14);
+                color: var(--secondary-text-on-light);
+            }
+
+            &__input {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        .input {
+            position: relative;
+
+            &__left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: rem(20);
+
+                svg {
+                    width: rem(40);
+                    height: rem(40);
+                   
+                    path {
+                        fill: #C1C1C1;
+                    }
+                }
+            }
+
+            &__no-file {
+                margin-top: rem(16);
+                color: #C1C1C1;
+                white-space: nowrap;
+            }
+
+            &__choose {
+                background:transparent;
+                color: #C1C1C1;
+                font-size: rem(13);
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            &__remove {
+                position: absolute;
+                font-size: 0;
+                right: 0;
+                top: rem(80);
+                color: var(--secondary-text-on-light);
+                border-radius: 50%;
+            }
+        }
+
+        .chip {
+            display: inline-flex;
+            justify-content: space-between;
+            height: rem(32);
+            margin-right: rem(8);
+            margin-bottom: rem(8);
+            padding: 0 rem(4) 0 rem(12);
+            align-items: center;
+            background-color: #fafafa;
+            border: var(--border-on-light);
+            border-radius: rem(17);
+            white-space: nowrap;
+
+            &__container {
+                padding-right: rem(24);
+            }
+
+            &__text {
+                display: inline-block;
+                margin-right: rem(8);
+                font-size: rem(14);
+            }
+        }
     }
 }
 

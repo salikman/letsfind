@@ -155,3 +155,27 @@
         }
     }
 }
+
+.post-ads {
+    padding: rem(60) 0;
+
+    @include media(991) {
+        padding: rem(30) 0;
+    }
+
+    &__title {
+        margin-bottom: rem(30);
+        font-size: rem(28);
+        font-weight: 500;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(20);
+
+        @include media(767) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

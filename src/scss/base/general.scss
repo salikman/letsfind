@@ -97,6 +97,12 @@ body {
     }
 
     &_post {
-        padding-top: rem(50);
+        padding-top: rem(20);
+    }
+
+    &_row {
+        position: relative;
+        display: flex;
+        gap: rem(20);
     }
 }
