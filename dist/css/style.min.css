@@ -971,6 +971,10 @@ body.lock {
   max-width: 58.75rem;
   width: 95%;
 }
+.modal.w620 {
+  max-width: 38.75rem;
+  width: 95%;
+}
 .modal .modal-add {
   padding: 3.125rem;
 }
@@ -999,6 +1003,62 @@ body.lock {
   .modal .title {
     font-size: 1.875rem;
   }
+}
+.modal .modal-review .title {
+  margin-bottom: 1.875rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.modal .modal-review .form-review {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.9375rem;
+}
+.modal .modal-review .vote {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.modal .modal-review .message, .modal .modal-review .name, .modal .modal-review .email, .modal .modal-review .social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.modal .modal-review .message input, .modal .modal-review .message textarea, .modal .modal-review .name input, .modal .modal-review .name textarea, .modal .modal-review .email input, .modal .modal-review .email textarea, .modal .modal-review .social input, .modal .modal-review .social textarea {
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #D8D8D8;
+}
+.modal .modal-review .message input:focus, .modal .modal-review .message textarea:focus, .modal .modal-review .name input:focus, .modal .modal-review .name textarea:focus, .modal .modal-review .email input:focus, .modal .modal-review .email textarea:focus, .modal .modal-review .social input:focus, .modal .modal-review .social textarea:focus {
+  border: 0.0625rem solid #D8D8D8;
+}
+.modal .modal-review .message input::placeholder, .modal .modal-review .message textarea::placeholder, .modal .modal-review .name input::placeholder, .modal .modal-review .name textarea::placeholder, .modal .modal-review .email input::placeholder, .modal .modal-review .email textarea::placeholder, .modal .modal-review .social input::placeholder, .modal .modal-review .social textarea::placeholder {
+  opacity: 0.8;
+}
+.modal .modal-review .message textarea, .modal .modal-review .name textarea, .modal .modal-review .email textarea, .modal .modal-review .social textarea {
+  height: 8.125rem;
+  resize: none;
+}
+.modal .modal-review .vote, .modal .modal-review .message, .modal .modal-review .social {
+  width: 100%;
+}
+.modal .modal-review .name, .modal .modal-review .email {
+  width: calc(50% - 10px);
+}
+.modal .modal-review .button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  width: max-content;
+  padding: 0.6875rem 1.25rem;
+  background: #1E5D9B;
+  border-radius: 0.25rem;
+}
+.modal .modal-review .button span {
+  color: white;
 }
 
 .breadcrumb-container {

@@ -5,6 +5,10 @@
         max-width: rem(940);
         width: 95%;
     }
+    &.w620 {
+        max-width: rem(620);
+        width: 95%;
+    }
 
     .modal-add {
         padding: rem(50);
@@ -30,6 +34,74 @@
         }
         @media (max-width: 475px) {
             font-size: rem(30);
+        }
+    }
+
+    .modal-review {
+        .title {
+            margin-bottom: rem(30);
+            text-align: left;
+            font-size: rem(24);
+        }
+
+        .form-review {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: rem(15);
+        }
+
+        .vote {
+            display: flex;
+            align-items: center;
+            gap: rem(10);
+        }
+
+        .message, .name, .email, .social {
+            display: flex;
+            flex-direction: column;
+            gap: rem(10);
+
+            input, textarea {
+                padding: rem(10);
+                border-radius: rem(4);
+                border: rem(1) solid #D8D8D8;
+
+                &:focus {
+                    border: rem(1) solid #D8D8D8;
+                }
+
+                &::placeholder {opacity: .8;}
+            }
+
+            textarea {
+                height: rem(130);
+                resize: none;
+            }
+        }
+
+        .vote, .message, .social {
+            width: 100%;
+        }
+
+        .name, .email {
+            width: calc(50% - 10px);
+        }
+
+        .button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: rem(20);
+            width: max-content;
+            padding: rem(11) rem(20);
+            background: $blueColor;
+            border-radius: rem(4);
+    
+            span {
+                color: white;
+            }
         }
     }
 }
