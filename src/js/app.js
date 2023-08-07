@@ -32,6 +32,28 @@ const swiperServices = new Swiper(".section-js", {
     }
   },
 });
+
+const swiperService = new Swiper(".service-slider", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  direction: "vertical",
+});
+const swiperService2 = new Swiper(".service-slider2", {
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiperService,
+  },
+});
 /* ********************************************************************** */
 /* ******************************Materialize***************************** */
 const elTabs = document.querySelectorAll('.tabs')
@@ -44,6 +66,9 @@ const iSidenav = M.Sidenav.init(eSidenav);
 var filterContainer = document.querySelector('#filter li');
 var filterForm = document.querySelector('.filter__form');
 var filterElement = document.querySelector('.filter');
+
+const eMaterialboxed = document.querySelectorAll('.materialboxed');
+const iMaterialboxed = M.Materialbox.init(eMaterialboxed);
 
 // Function to move the filter form to the filter container
 function moveFilterForm() {
@@ -76,7 +101,9 @@ const eModal = document.querySelectorAll('.modal');
 const iModal = M.Modal.init(eModal);
 
 const eSelect = document.querySelectorAll('select');
-const iSelect = M.FormSelect.init(eSelect);
+const iSelect = M.FormSelect.init(eSelect, {
+  classes: 'custom'
+});
 
 const eCollapsible = document.querySelectorAll('.collapsible');
 const iCollapsible = M.Collapsible.init(eCollapsible);
